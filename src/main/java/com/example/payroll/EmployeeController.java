@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
+// Wraps the repository in a web layer and implements CRUD actions using annotations
 @RestController
 class EmployeeController {
     private final EmployeeRepository repository;

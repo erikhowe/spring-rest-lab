@@ -7,15 +7,14 @@ import javax.persistence.Id;
 
 @Entity
 class Employee {
-    private @Id @GeneratedValue Long id;
+    private @Id @GeneratedValue Long id;  // JPA annotations
     private String firstName;
     private String lastName;
     private String role;
 
-    Employee() {}
-
-    Employee(String firstName, String lastName, String role) {
-
+    // Constructors
+    protected Employee() {}  // Won't be used so declared as protected
+    public Employee(String firstName, String lastName, String role) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;
